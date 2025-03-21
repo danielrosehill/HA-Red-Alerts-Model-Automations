@@ -1,0 +1,40 @@
+alias: Red Alerts in Anytown Metro - Activate Specific Sirens
+description: >-
+  When a Red Alert is received, trigger some actions and activate the listed
+  Sirens
+triggers:
+  - entity_id:
+      - binary_sensor.oref_alert
+    to: "on"
+    trigger: state
+    alias: Red alert for Your Area!
+actions:
+  - alias: Turn on lights
+    data:
+      brightness_pct: 100
+      rgb_color:
+        - 255
+        - 0
+        - 0
+    action: light.turn_on
+    target:
+      area_id:
+        - master_bathroom
+        - master_bedroom
+        - foyer
+        - kitchen
+        - family_room
+        - study
+        - deck
+        - guest_bathroom
+  - alias: Activate Specific Sirens
+    data: {}
+    target:
+      entity_id:
+        - siren.master_bathroom_alarm
+        - siren.master_bedroom_alarm
+        - siren.study_siren_alarm
+        - siren.front_door_chime
+        - siren.family_room_alarm
+        - siren.guest_bathroom_alarm
+    action: homeassistant.turn_on
