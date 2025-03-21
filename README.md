@@ -68,7 +68,7 @@ For the most reliable network connectivity, connect it to your router or switch 
 
 ![alt text](screenshots/3.png)
 
-I purchased Zigbee Sirens from Aliexpress and installed one in each room. This was somewhat expensive, but I figured it was less costly than being hit by a rocket (dark humor aside).
+I purchased Zigbee Sirens from Aliexpress and installed one in each room. This was somewhat expensive, but I figured it was less costly than being hit by a rocket (😱).
 
 I placed these somewhat inconspicuously so visitors don't ask too many questions about why there's an unusual sound device in every room (yes, including the bathroom).
 
